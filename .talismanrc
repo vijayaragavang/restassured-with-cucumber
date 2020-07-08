@@ -1,0 +1,7 @@
+fileignoreconfig:
+- filename: wiremock-standalone-2.27.0.jar
+  checksum: bf2260247ebb967c22174e299333aca98bb3ac86b5d4a0a1c3c85e08f3af4678
+  ignore_detectors: []
+- filename: target/cucumber-html-report/jquery-1.8.2.min.js
+  checksum: 0f835bc4dfe2f03ef8beb6b999092494ce3947e143f2b9792986799754c377b5
+  ignore_detectors: []
