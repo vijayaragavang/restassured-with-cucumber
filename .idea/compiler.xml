@@ -9,8 +9,8 @@
         <module name="restassured-cucumber" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="restassured-cucumber" target="1.5" />
+    <bytecodeTargetLevel target="11">
+      <module name="restassured-cucumber" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
