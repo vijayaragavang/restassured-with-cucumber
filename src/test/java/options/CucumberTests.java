@@ -1,15 +1,13 @@
 package options;
 
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
-
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		strict = true,
 		monochrome = true,
-		plugin = {"pretty", "html:target/cucumber-html-report" },
+		plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", "json:target/cucumber-report.json"},
 		glue = {"stepdefs"},
 		features = {"src/test/features"})
 public class CucumberTests {}
