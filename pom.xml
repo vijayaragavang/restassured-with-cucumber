@@ -5,6 +5,18 @@
 	<groupId>vijay</groupId>
 	<artifactId>restassured-cucumber</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>8</source>
+					<target>8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 	<packaging>jar</packaging>
 
 	<name>restassured</name>
@@ -13,7 +25,11 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
+		<!-- Reporting using Cucumber 4 adapter-->
 		<cucumber.version>4.8.1</cucumber.version>
+		<!-- Uncomment this for reporting using Custom Event Listener
+		<cucumber.version>6.1.0</cucumber.version>
+		-->
 	</properties>
 
 	<dependencies>
@@ -72,12 +88,19 @@
 			<version>${cucumber.version}</version>
 			<scope>test</scope>
 		</dependency>
-
+	<!-- Reporting using Cucumber 4 adapter-->
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports-cucumber4-adapter</artifactId>
 			<version>1.0.12</version>
 		</dependency>
+
+	<!-- Uncomment this for reporting using Custom Event Listener
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>4.1.5</version>
+		</dependency>-->
 
 		<dependency>
 			<groupId>junit</groupId>

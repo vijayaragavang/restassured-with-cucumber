@@ -12,7 +12,7 @@ Feature: Get book by ISBN
 	| items.volumeInfo.publisher 				| Simon and Schuster	|   
 	| items.volumeInfo.pageCount 				| 630					|
 
-	Scenario: User calls web service to get a book by its ISBN
-		Given a book exists with an isbn of 9781451648546
-		And press submit
+  Scenario: User calls web service to get a book by its ISBN Fail
+  Given a book exists with an isbn of 9781451648546
+  And press submit
 

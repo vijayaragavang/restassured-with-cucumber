@@ -49,7 +49,7 @@ public class BookStepDefinitions {
 	private String ENDPOINT_GET_BOOK_BY_ISBN = "https://www.googleapis.com/books/v1/volumes";
 
 
-	@Given("a book exists with an isbn of (.*)")
+	@Given("a book exists with an isbn of {}")
 	public void a_book_exists_with_isbn(String isbn){
 		request = given().param("q", "isbn:" + isbn);
 	}
